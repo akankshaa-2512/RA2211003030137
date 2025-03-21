@@ -1,4 +1,3 @@
-// src/components/Feed.tsx
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { makeStyles } from '@mui/styles';
