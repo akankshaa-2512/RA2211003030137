@@ -4,7 +4,7 @@ const getTopOrLatestPosts = async (req, res) => {
     const { type } = req.query;
 
     try {
-        const posts = await postService.getPostsByUserId(); // Fetch all posts
+        const posts = await postService.getPostsByUserId(); 
         if (type === 'popular') {
             const popularPosts = posts.filter(post => post.comments.length === Math.max(...posts.map(p => p.comments.length)));
             return res.json(popularPosts);

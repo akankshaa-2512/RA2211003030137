@@ -8,10 +8,10 @@ import { Container, Grid, Box , Typography} from '@mui/material';
 
 const App: React.FC = () => {
   return (
-    <Container maxWidth={false} disableGutters> {/* Set maxWidth to false and disable gutters */}
-      <Box display="flex" alignItems="center" mb={3}> {/* Flexbox for alignment */}
-        <img src="/./images/logo.JPG" alt="Logo" style={{ width: '50px', height: '50px', marginRight: '8px' }} /> {/* Logo */}
-        <Typography variant="h3" component="h2">Afflysis</Typography> {/* Application name */}
+    <Container maxWidth={false} disableGutters> 
+      <Box display="flex" alignItems="center" mb={3}> 
+        <img src="/./images/logo.JPG" alt="Logo" style={{ width: '50px', height: '50px', marginRight: '8px' }} /> 
+        <Typography variant="h3" component="h2">Afflysis</Typography> 
       </Box>
       <Grid container spacing={3}>
         <Grid item xs={12} md={4}>

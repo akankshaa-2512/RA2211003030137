@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     background: 'linear-gradient(to bottom right, lightpink, white, pink)', 
     boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',
     borderRadius: '12px',
-    border: '2px solid white', // Add a white border
+    border: '2px solid white', 
   },
   feedCard: {
     marginBottom: '16px',
@@ -22,8 +22,8 @@ const useStyles = makeStyles({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: '1.5rem', // Adjust font size as needed
-    color: '#d5006d', // Pink color for the title
+    fontSize: '1.5rem', 
+    color: '#d5006d', 
     marginBottom: '8px',
   },
 });
@@ -36,19 +36,19 @@ const Feed: React.FC = () => {
       id: 1, 
       title: 'Majestic Cascade', 
       content: 'Breathtaking waterfall in the mountains.', 
-      image: '/./images/feed1.JPG' // Path to the waterfall image
+      image: '/./images/feed1.JPG' 
     },
     { 
       id: 2, 
       title: 'Canvas of Colors', 
       content: 'Stunning sunset with vibrant clouds.', 
-      image: '/./images/feed2.JPG' // Path to the sunset image
+      image: '/./images/feed2.JPG' 
     },
     { 
       id: 3, 
       title: 'Elegance in Bloom', 
       content: 'Lotus flower reflecting sunlight.', 
-      image: '/./images/feed3.JPG' // Path to the lotus image
+      image: '/./images/feed3.JPG' 
     },
   ];
 
@@ -61,8 +61,8 @@ const Feed: React.FC = () => {
         <Card key={post.id} className={classes.feedCard}>
           <CardMedia component="img" className={classes.media} image={post.image} alt={post.title} />
           <CardContent className={classes.content}>
-            <Typography className={classes.title}>{post.title}</Typography> {/* Apply pink color to title */}
-            <Typography variant="body2">{post.content}</Typography> {/* Shortened content */}
+            <Typography className={classes.title}>{post.title}</Typography> 
+            <Typography variant="body2">{post.content}</Typography> 
           </CardContent>
         </Card>
       ))}

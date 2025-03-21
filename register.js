@@ -5,7 +5,7 @@ const data = {
     ownerName: "Akanksha Anand",
     rollno: "RA2211003030137",
     ownerEmail: "aa0896@srmist.edu.in",
-    accessCode: "SUfGJv",  // Double-check for typos or trailing spaces
+    accessCode: "SUfGJv",  
 };
 
 axios.post('http://20.244.56.144/test/register', data, {
@@ -15,8 +15,8 @@ axios.post('http://20.244.56.144/test/register', data, {
     timeout: 5000
 })
 .then(response => {
-    console.log("✅ Success:", response.data);
+    console.log("Success:", response.data);
 })
 .catch(error => {
-    console.error("❌ Error Details:", error.response?.data || error.message);
+    console.error("Error Details:", error.response?.data || error.message);
 });

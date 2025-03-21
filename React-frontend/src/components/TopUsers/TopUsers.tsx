@@ -8,10 +8,10 @@ const useStyles = makeStyles({
     background: 'linear-gradient(to bottom right, lightpink, white, pink)', 
     boxShadow: '0px 4px 6px rgba(0,0,0,0.1)',
     borderRadius: '12px',
-    border: '2px solid white', // Add a white border
+    border: '2px solid white', 
   },
   title: {
-    fontSize: '4rem', // Large font size
+    fontSize: '4rem', 
     fontWeight: '800', 
     marginBottom: '16px',
     color: 'black',
@@ -42,7 +42,7 @@ const TopUsers: React.FC = () => {
 
   return (
     <Box className={classes.root}>
-      <Typography variant="h5" className={classes.title}>Top Users</Typography> {/* Use variant for larger text */}
+      <Typography variant="h5" className={classes.title}>Top Users</Typography> 
       <List>
         {users.map((user) => (
           <ListItem key={user.id} className={classes.userItem}>

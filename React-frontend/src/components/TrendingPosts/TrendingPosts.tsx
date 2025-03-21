@@ -2,8 +2,8 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, CardMedia } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import CommentIcon from '@mui/icons-material/Comment'; // Import the comment icon
-import VisibilityIcon from '@mui/icons-material/Visibility'; // Import the visibility icon for impressions
+import CommentIcon from '@mui/icons-material/Comment'; 
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const useStyles = makeStyles({
   root: {
@@ -15,10 +15,10 @@ const useStyles = makeStyles({
   },
   postCard: {
     marginBottom: '16px',
-    background: 'lightpink', // Ensure this is applied
+    background: 'lightpink', 
     borderRadius: '8px',
     overflow: 'hidden',
-    boxShadow: 'none', // Remove default shadow if needed
+    boxShadow: 'none', 
   },
   media: {
     height: 200,
@@ -28,16 +28,16 @@ const useStyles = makeStyles({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: '1.75rem', // Increased font size for the title
+    fontSize: '1.75rem', 
     marginBottom: '8px',
-    color: '#d5006d', // Change title color for better visibility
-    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)', // Optional: add a subtle text shadow
+    color: '#d5006d', 
+    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)', 
   },
   body: {
-    fontSize: '1.1rem', // Slightly larger font size for content
-    lineHeight: '1.5', // Increase line height for better readability
+    fontSize: '1.1rem', 
+    lineHeight: '1.5', 
     marginBottom: '8px',
-    color: '#333', // Darker color for content
+    color: '#333', 
   },
   metrics: {
     display: 'flex',
@@ -48,7 +48,7 @@ const useStyles = makeStyles({
   metricItem: {
     display: 'flex',
     alignItems: 'center',
-    marginRight: '16px', // Space between metrics
+    marginRight: '16px', 
   },
 });
 
